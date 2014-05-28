@@ -1,3 +1,7 @@
 body {
 	background-color: #FC0AA8;
 }
+
+li.gallery {
+	list-style-type: none;
+}

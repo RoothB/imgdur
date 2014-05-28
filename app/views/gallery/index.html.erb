@@ -1,0 +1,11 @@
+<h1>My Gallery</h1>
+
+<ul>
+  <% @images.each do |image_record|%>
+	<center><li class="gallery">
+	<%= image_tag(image_record.image(:medium)) %></li>
+	<p>Name: <%= image_record.name %></p>
+	<p>Description: <%= image_record.description%></p>
+	<p>Rating: <%= image_record.rating%></p></center>
+	<% end %>
+</ul>

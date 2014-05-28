@@ -1,4 +1,7 @@
 Imgdur::Application.routes.draw do
+  get "contact/about_us", to: "contact#about_us", as: "about_us"
+  get "contact/contact", to: "contact#contact", as: "contact"
+  get "gallery/index", to: "gallery#index", as: "gallery"
   get "main/index", to: "main#index", as: "main"
   root "main#index"
   resources :images
