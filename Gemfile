@@ -7,7 +7,7 @@ gem 'rails', '4.0.0'
 group :development do
 	gem 'sqlite3'
 end
-gem 'paperclip', '~> 3.4.1'
+gem 'paperclip'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

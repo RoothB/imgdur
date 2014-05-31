@@ -16,7 +16,11 @@ class ImagesController < ApplicationController
   def new
     @image = Image.new
   end
-
+ def upload_post
+  @image = Image.new(image_params)
+  @image.save
+  redirect_to root_path, notice: "You did it"
+end
   # GET /images/1/edit
   def edit
   end

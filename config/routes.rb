@@ -3,6 +3,10 @@ Imgdur::Application.routes.draw do
   get "contact/contact", to: "contact#contact", as: "contact"
   get "gallery/index", to: "gallery#index", as: "gallery"
   get "main/index", to: "main#index", as: "main"
+  post "upload", to: "images#upload_post", as: "upload_post"
+  get "upload", to: "main#upload", as: "upload"
+  get "/rate", to: "gallery#rating", as: "rating"
+  
   root "main#index"
   resources :images
 
